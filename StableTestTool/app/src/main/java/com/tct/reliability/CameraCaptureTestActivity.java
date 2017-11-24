@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
-import android.preference.SwitchPreference;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -19,7 +18,6 @@ public class CameraCaptureTestActivity extends PreferenceActivity implements Pre
     private static final String CAMERA_FREQUENCY_PERIOD = "pref_key_camera_frequency_period";
     private CameraCapturePreference mCameraCapturePreference;
     private ListPreference mCameraFrequencyPeriod;
-    //private SwitchPreference mCameraCaptureSwitchPreference;
 
     private boolean mCheck;
     public static int intCaptureFrequency;
@@ -31,7 +29,6 @@ public class CameraCaptureTestActivity extends PreferenceActivity implements Pre
         addPreferencesFromResource(R.xml.camera_captuer_test_preference);
         mCameraCapturePreference = (CameraCapturePreference) findPreference(CAMERA_CAPTURE_PREFERENCE);
         mCameraCapturePreference.setOnPreferenceChangeListener(this);
-        //mCameraCaptureSwitchPreference = (SwitchPreference) findPreference(CAMERA_CAPTURE_PREFERENCE);
         mCameraFrequencyPeriod = (ListPreference) findPreference(CAMERA_FREQUENCY_PERIOD);
         mCameraFrequencyPeriod.setSummary(mCameraFrequencyPeriod.getEntry());
         mCameraFrequencyPeriod.setOnPreferenceChangeListener(this);
@@ -55,20 +52,5 @@ public class CameraCaptureTestActivity extends PreferenceActivity implements Pre
 
         return true;
     }
-
-//    @Override
-//    public boolean onPreferenceClick(Preference preference) {
-//        if(preference.equals(CAMERA_CAPTURE_PREFERENCE)) {
-//            if(mCameraCapturePreference.getSwitchButtonCheck()) {   //mSwitchButton is checked
-//            } else {
-//            }
-//        }
-//        return false;
-//    }
-//
-//    @Override
-//    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-//        return super.onPreferenceTreeClick(preferenceScreen, preference);
-//    }
 
 }

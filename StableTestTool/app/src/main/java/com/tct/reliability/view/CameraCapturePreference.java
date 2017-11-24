@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
-import android.widget.Toast;
 
 import com.tct.reliability.CameraCaptureTestActivity;
 import com.tct.reliability.CaptureActivity;
@@ -53,19 +52,12 @@ public class CameraCapturePreference extends Preference {
                 Log.d("msy","onCheckedChanged:isChecked="+isChecked);
                 if (isChecked) {
                     mCheck = false;
-                    //Toast.makeText(mContext,"test",Toast.LENGTH_SHORT).show();
                     Intent captureActivityIntent = new Intent(mContext,CaptureActivity.class);
                     captureActivityIntent.putExtra("pref_key_camera_frequency_period",
                             CameraCaptureTestActivity.intCaptureFrequency);
                     mContext.startActivity(captureActivityIntent);
-                    //mHandler.post(mStartTorchTestRunnable);
                 } else {
                     mCheck = true;
-                    /*mHandler.removeCallbacks(mStartTorchTestRunnable);
-                    mHandler.removeMessages(MSG_TORCH_DELAY_FLASH);
-                    mHandler.removeMessages(MSG_TORCH_FLASH);
-                    mHandler.removeMessages(MSG_TORCH_LIGHT_OFF);
-                    mFlashlightController.setFlashlight(false);*/
                 }
             }
         });
