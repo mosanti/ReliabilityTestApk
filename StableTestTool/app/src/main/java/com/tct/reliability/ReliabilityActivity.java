@@ -26,11 +26,6 @@ public class ReliabilityActivity extends PreferenceActivity implements
             Manifest.permission.CAMERA
     };
 
-    /**
-     *
-     * @param Add by zhibin.zhong for reliability test.
-     */
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
