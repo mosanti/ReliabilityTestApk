@@ -7,6 +7,12 @@ import android.widget.Switch;
 import com.tct.reliability.R;
 
 
+/**
+ *
+ * Create by zhibin.zhong
+ * @author user
+ *
+ */
 
 public class SwitchButton extends Switch {
 
