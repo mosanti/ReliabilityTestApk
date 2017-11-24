@@ -13,12 +13,6 @@ import com.tct.reliability.R;
 import com.tct.reliability.torch.FlashlightController;
 
 
-/**
- *
- * Create by zhibin.zhong
- * @author user
- *
- */
 
 public class TorchPreference extends Preference implements
         FlashlightController.FlashlightListener {

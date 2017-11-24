@@ -13,12 +13,6 @@ import android.widget.TextView;
 import com.tct.reliability.R;
 
 
-/**
- *
- * Create by zhibin.zhong
- * @author user
- *
- */
 
 public class VibrationPreference extends Preference {
 
