@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ReliabilityTools</string>
+    <string name="vibration_test_title">Vibration test</string>
+    <string name="ring_test_title">Ring test</string>
+    <string name="lcd_test_title">LCD operation test</string>
+    <string name="torch_test_title">Torch test</string>
+    <string name="camera_test_title">Camera capture test</string>
+    <string name="camera_capture_test_unchecked">Start test</string>
+    <string name="camera_capture_test_checked">Finish test</string>
+    <string name="camera_setting_frequency">setting frequency</string>
+</resources>

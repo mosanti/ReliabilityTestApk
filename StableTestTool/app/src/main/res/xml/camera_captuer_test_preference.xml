@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.tct.reliability.view.CameraCapturePreference
+        android:key="pre_key_camera_capture_test"
+        android:title="@string/camera_capture_test_unchecked" />
+    <!--<SwitchPreference
+        android:defaultValue="false"
+        android:key="pre_key_camera_capture_test"
+        android:title="@string/camera_capture_test_unchecked"/>-->
+
+    <ListPreference
+        android:key="pref_key_camera_frequency_period"
+        android:title="@string/camera_setting_frequency"
+        android:entries="@array/pref_camera_frequency_period"
+        android:entryValues="@array/pref_camera_frequency_period_values"
+        android:defaultValue="5"
+        android:dialogTitle="@string/camera_setting_frequency" />
+
+</PreferenceScreen>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.tct.reliability.view.VibrationPreference
+        android:key="key_vibration_test"
+        android:summary="1"
+        android:title="@string/vibration_test_title" />
+
+    <com.tct.reliability.view.RingPreference
+        android:key="ring_vibration_test"
+        android:summary="2"
+        android:title="@string/ring_test_title" />
+
+    <PreferenceScreen
+        android:key="key_lcd_test"
+        android:title="@string/lcd_test_title" />
+
+    <com.tct.reliability.view.TorchPreference
+        android:key="key_torch_test"
+        android:summary="3"
+        android:title="@string/torch_test_title" />
+
+    <PreferenceScreen
+        android:key="key_camera_test"
+        android:title="@string/camera_test_title" />
+
+
+</PreferenceScreen>
